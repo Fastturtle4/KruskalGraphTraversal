@@ -22,5 +22,7 @@ sample input:
 sample output:
 3 1 4 2
 
+The output from kruskalMinSpanTree.cc will be used as the input for kruskalTraverse.cc in order to use the minimum spanning tree to create the depth first search traversal. This will be done using piping in the linux terminal.
+
 code modified from original at:
 https://github.com/luisfcofv/competitive-programming-book/blob/master/ch4/ch4_03_kruskal_prim.cpp
