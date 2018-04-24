@@ -102,7 +102,7 @@ if (argc != 2){
 }
 int numverts;
 int weight;
-int startvert;
+int startvert = atoi(argv[1]) - 1;
 int edgevalue;
 vector <int> rowvector;
 vector <int> colvector;
@@ -122,6 +122,7 @@ for (int i = 0; i < 2*numverts - 2; i++){
 	g.addEdge(rowvector[i], colvector[i]);
 }
 
+cout << "Traversal (DFS):" << endl;
 g.DFS(startvert);
 cout << endl;
 
